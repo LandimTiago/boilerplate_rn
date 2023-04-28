@@ -1,10 +1,9 @@
 import * as React from "react";
 
 import { StyleSheet, View, Platform } from "react-native";
-
 import Colors from "./src/styles";
+
 import Home from "./src/Pages/Home";
-import Login from "./src/Pages/Login";
 
 export default function App() {
   return <Home />;

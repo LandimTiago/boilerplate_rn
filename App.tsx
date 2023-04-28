@@ -1,26 +1,20 @@
 import * as React from "react";
 
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
+import { StyleSheet, View, Platform } from "react-native";
 
 import Colors from "./src/styles";
-import Routes from "./src/Routes";
+import Home from "./src/Pages/Home";
+import Login from "./src/Pages/Login";
 
 export default function App() {
-  return (
-    <NavigationContainer>
-      <StatusBar style="light" />
-      <View style={styles.container}>
-        <Routes />
-      </View>
-    </NavigationContainer>
-  );
+  return <Home />;
+  // return <Login />;
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingTop: Platform.OS === "android" ? 30 : 0,
     backgroundColor: Colors.color3,
   },
 });

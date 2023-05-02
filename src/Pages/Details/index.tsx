@@ -4,7 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 
 import { Container, Text } from "./styles";
 
-const Login: React.FC = () => {
+const Details: React.FC = () => {
   // Funções utilizadas pelo Stack Navigation
   // Use Navigation é um Hook, portanto deve ficar foda da função
   // const navigation = useNavigation();
@@ -14,7 +14,7 @@ const Login: React.FC = () => {
 
   return (
     <Container>
-      <Text>"Login"</Text>
+      <Text>"Details"</Text>
 
       {/* Funções utilizadas pelo Stack Navigation */}
       {/* <Button title="Home" onPress={openScreen} /> */}
@@ -22,4 +22,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
+export default Details;

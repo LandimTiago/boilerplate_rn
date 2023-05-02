@@ -1,6 +1,8 @@
-import { Container, Text } from "./styles";
+import React from "react";
+import { useNavigation } from "@react-navigation/native";
 
-interface HomeProps {}
+import { Button } from "react-native";
+import { Container, Text } from "./styles";
 
 interface FutureReleasesProps {
   id: number;
@@ -11,10 +13,20 @@ interface FutureReleasesProps {
   createdAt: string;
 }
 
-const Home: React.FC<HomeProps> = () => {
+const Home: React.FC = () => {
+  // Funções utilizadas pelo Stack Navigation
+  // Use Navigation é um Hook, portanto deve ficar foda da função
+  // const navigation = useNavigation();
+  // const openScreen = () => {
+  //   navigation.navigate("Login");
+  // };
+
   return (
     <Container>
-      <Text>Hello</Text>
+      <Text>"Home"</Text>
+
+      {/* // Funções utilizadas pelo Stack Navigation */}
+      {/* <Button title="Login" onPress={openScreen} /> */}
     </Container>
   );
 };

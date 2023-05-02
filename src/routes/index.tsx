@@ -9,8 +9,8 @@ const Routes: React.FC = () => {
   return (
     <NavigationContainer>
       {/* <StackRoutes /> */}
-      {/* <TabRoutes /> */}
-      <DrawerRoutes />
+      <TabRoutes />
+      {/* <DrawerRoutes /> */}
     </NavigationContainer>
   );
 };
